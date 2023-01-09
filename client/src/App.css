@@ -85,7 +85,8 @@
 }
 
 .interface-heading {
-  margin-top: 35%;
+  margin-top: 13rem;
+  margin-bottom: 3rem;
   user-select: text;
 }
 
@@ -95,14 +96,34 @@
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  user-select: text;
   }
   
-  .div1 { grid-area: 1 / 1 / 2 / 2; }
-  .div2 { grid-area: 1 / 2 / 2 / 3; }
-  .div3 { grid-area: 1 / 3 / 2 / 4; }
-  .div4 { grid-area: 2 / 1 / 3 / 2; }
-  .div5 { grid-area: 2 / 2 / 3 / 3; }
-  .div6 { grid-area: 2 / 3 / 3 / 4; }
+  .div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+  
+  }
+  .div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+  
+  }
+  .div3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+  
+  }
+  .div4 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-color: #43444d;
+    border-radius: 5px;
+  }
+  .div5 { 
+    grid-area: 2 / 2 / 3 / 3; 
+  
+  }
+  .div6 { 
+    grid-area: 2 / 3 / 3 / 4; 
+  
+  }
 
 .App-link {
   color: #61dafb;
