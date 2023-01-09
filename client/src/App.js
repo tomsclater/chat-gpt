@@ -18,11 +18,13 @@ function App() {
       <section className="chatbox">
         <div className="chat-log">
           <div className="chat-message">
-            <div className="avatar">
-              
-            </div>
-            <div className="message">
-              Hello World
+            <div className="chat-message-center">
+              <div className="avatar">
+                
+              </div>
+              <div className="message">
+                Hello World
+              </div>
             </div>
           </div>
         </div>
