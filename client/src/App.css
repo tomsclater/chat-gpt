@@ -85,7 +85,7 @@
 }
 
 .interface-heading {
-  margin-top: 13rem;
+  margin-top: 10rem;
   margin-bottom: 3rem;
   user-select: text;
   font-size: 30px;
@@ -98,85 +98,110 @@
   grid-column-gap: 11px;
   grid-row-gap: 11px;
   user-select: text;
-  font-size: 14px;
+  font-size: 11px;
   }
   
   .div1 { 
     grid-area: 1 / 1 / 2 / 2; 
-  
+    font-size: 13px;
   }
   .div2 { 
     grid-area: 1 / 2 / 2 / 3; 
-  
+    font-size: 13px;
+
   }
   .div3 { 
     grid-area: 1 / 3 / 2 / 4; 
+    font-size: 13px;
   }
   .div4 { 
     grid-area: 2 / 1 / 3 / 2; 
     background-color: #43444d;
     border-radius: 5px;
-    padding: 8px 8px;
+    padding: 10px;
   }
   .div5 { 
     grid-area: 2 / 2 / 3 / 3; 
     background-color: #43444d;
     border-radius: 5px;
-    padding: 8px 8px;
-  }
-  .div6 { 
-    grid-area: 2 / 3 / 3 / 4; 
-    background-color: #43444d;
-    border-radius: 5px;
-    padding: 8px 8px;
+    padding: 10px;
 
   }
   .div6 { 
     grid-area: 2 / 3 / 3 / 4; 
     background-color: #43444d;
     border-radius: 5px;
-    padding: 8px 8px;
+    padding: 10px;
+
   }
+
   .div7 { 
     grid-area: 3 / 1 / 4 / 2;
     background-color: #43444d;
     border-radius: 5px; 
-    padding: 8px 8px;
+    padding: 10px;
   }
   .div8 { 
     grid-area: 3 / 2 / 4 / 3;
     background-color: #43444d;
     border-radius: 5px; 
-    padding: 8px 8px;
-
+    padding: 10px;
   }
   .div9 { 
     grid-area: 3 / 3 / 4 / 4;
     background-color: #43444d;
     border-radius: 5px; 
-    padding: 8px 8px;
+    padding: 10px;
   }
   .div10 { 
     grid-area: 4 / 1 / 5 / 2;
     background-color: #43444d;
     border-radius: 5px; 
-    padding: 8px 8px;
+    padding: 10px;
   }
   .div11 { 
     grid-area: 4 / 2 / 5 / 3;
     background-color: #43444d;
     border-radius: 5px; 
-    padding: 8px 8px;
+    padding: 10px;
   }
   .div12 { 
     grid-area: 4 / 3 / 5 / 4;
     background-color: #43444d;
     border-radius: 5px; 
-    padding: 8px 8px;
+    padding: 10px;
   }
 
 .App-link {
   color: #61dafb;
+}
+
+.chat-log {
+  padding: 24px;
+  text-align: left;
+  display: flex;
+}
+
+.chat-message {
+  padding: 12px;
+  padding-left: 40px;
+}
+
+.avatar {
+  background:white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.message {
+  
+}
+
+@media screen and (min-width: 1080px){
+  .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12 {
+    padding: 20px;
+  }
 }
 
 @keyframes App-logo-spin {

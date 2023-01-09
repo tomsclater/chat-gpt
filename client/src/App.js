@@ -31,7 +31,7 @@ function App() {
         <h1 className="interface-heading">AI Chat Interface</h1>
         <div class="parent">
           <div class="div1"> <BsSun/><br/>Examples</div>
-          <div class="div2"> <AiOutlineThunderbolt/><br/>Capabilites</div>
+          <div class="div2"> <AiOutlineThunderbolt/><br/>Capabilities</div>
           <div class="div3"> <CiWarning/><br/>Limitations</div>
           <div class="div4"> "Explain quantum computing in simple terms"</div>
           <div class="div5"> Remembers what user said earlier in the conversation</div>
