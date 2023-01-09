@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tomsclater/chat-gpt/issues"
   },
-  "homepage": "https://github.com/tomsclater/chat-gpt#readme"
+  "homepage": "https://github.com/tomsclater/chat-gpt#readme",
+  "dependencies": {
+    "react-icons": "^4.7.1"
+  }
 }
