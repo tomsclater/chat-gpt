@@ -18,6 +18,16 @@ function App() {
         </div>
       </aside>
       <section className="chatbox">
+        <div className="chat-log">
+          <div className="chat-message">
+            <div className="avatar">
+              Me
+            </div>
+            <div className="message">
+              Hello World
+            </div>
+          </div>
+        </div>
         <h1 className="interface-heading">AI Chat Interface</h1>
         <div class="parent">
           <div class="div1"> <BsSun/><br/>Examples</div>
