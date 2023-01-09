@@ -184,7 +184,9 @@
 
 .chat-message {
   padding: 12px;
+  display: flex;
   padding-left: 40px;
+  padding-right: 40px;
 }
 
 .avatar {
@@ -195,7 +197,8 @@
 }
 
 .message {
-  
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 @media screen and (min-width: 1080px){
