@@ -6,8 +6,6 @@ import { BsSun } from 'react-icons/bs';
 import { AiOutlineThunderbolt } from 'react-icons/ai';
 import { CiWarning } from 'react-icons/ci';
 
-
-
 function App() {
   return (
     <div className="App">
