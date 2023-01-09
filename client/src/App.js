@@ -2,6 +2,7 @@
 import './App.css';
 import './normal.css';
 import { FaPlus } from 'react-icons/fa';
+// import { FaPlus } from 'react-icons/fa';
 
 function App() {
   return (
@@ -13,11 +14,17 @@ function App() {
         </div>
       </aside>
       <section className="chatbox">
+        <h1 className="interface-heading">AI Chat Interface</h1>
         <div className="chat-input-holder">
+          <div>
           <textarea
+            rows="1"
             className="chat-input-textarea"
-            placeholder="Type your message here"
-          ></textarea>
+          >
+          </textarea>
+          </div>
+          
+
         </div>
       </section>
       
