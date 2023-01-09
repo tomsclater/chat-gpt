@@ -37,6 +37,8 @@
 .chatbox {
   flex: 1;
   background-color: #343541;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .App-logo {
@@ -58,6 +60,7 @@
   color: whitesmoke;
   border: none;
   margin: 12px;
+  padding-left: 11px;
   outline: none;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 }
