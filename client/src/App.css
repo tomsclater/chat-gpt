@@ -186,11 +186,11 @@
 }
 
 .chat-message-center {
-  max-width: 480px;
+  max-width: 460px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  padding: 12px;
+  padding: 16px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -201,6 +201,7 @@
   width: 2rem;
   height: 2rem;
   position: absolute;
+  margin-top: -5px;
 }
 
 .message {
