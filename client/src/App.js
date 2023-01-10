@@ -27,6 +27,16 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="chat-message chatgpt">
+            <div className="chat-message-center">
+              <div className="avatar">
+                
+              </div>
+              <div className="message">
+                I am an AI
+              </div>
+            </div>
+          </div>
         </div>
         <h1 className="interface-heading">AI Chat Interface</h1>
         <div class="parent">

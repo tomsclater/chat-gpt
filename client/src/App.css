@@ -37,8 +37,6 @@
 .chatbox {
   flex: 1;
   background-color: #343541;
-  padding-right: 5%;
-  padding-left: 5%;
   position: relative;
 }
 
@@ -100,6 +98,8 @@
   user-select: text;
   font-size: 11px;
   max-height: 1px;
+  padding-right: 5%;
+  padding-left: 5%;
   }
   
   .div1 { 
@@ -178,13 +178,11 @@
 }
 
 .chat-log {
-  padding: 24px;
   text-align: left;
-  display: flex;
 }
 
-.chat-message {
-  
+.chat-message.chatgpt {  
+  background-color: rgba(255,255,255,0.1);
 }
 
 .chat-message-center {
@@ -195,7 +193,6 @@
   padding: 12px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: rgba(255,255,255,0.1);
 }
 
 .avatar {
