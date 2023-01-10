@@ -99,6 +99,7 @@
   grid-row-gap: 11px;
   user-select: text;
   font-size: 11px;
+  max-height: 1px;
   }
   
   .div1 { 
