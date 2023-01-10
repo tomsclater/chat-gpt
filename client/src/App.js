@@ -29,8 +29,33 @@ function App() {
           </div>
           <div className="chat-message chatgpt">
             <div className="chat-message-center">
-              <div className="avatar">
-                
+              <div className="avatar chatgpt">
+              <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={30}
+    height={30}
+    viewBox="0 0 256 256"
+  >
+    <path fill="none" d="M0 0h256v256H0z" />
+    <path
+      d="M32 216s32-56 32-120a64 64 0 0 1 128 0c0 64 32 120 32 120"
+      fill="none"
+      stroke="#000"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={16}
+    />
+    <circle cx={100} cy={108} r={12} />
+    <circle cx={156} cy={108} r={12} />
+    <path
+      fill="none"
+      stroke="#000"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={16}
+      d="m160 144-32 16-32-16M86.4 216a48.1 48.1 0 0 1 83.2 0"
+    />
+  </svg>
               </div>
               <div className="message">
                 I am an AI
