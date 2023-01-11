@@ -16,7 +16,7 @@ function App() {
     message: "How can I help you?"
   },{
     user: "me",
-    message: "Are you working?"
+    message: "What is the weather like in London?"
   }]);
 
   async function handleSubmit(e){
