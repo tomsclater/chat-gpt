@@ -30,12 +30,11 @@ function App() {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        message: chatLog.map((message) => message.message).
-        join("")
+        message: chatLog.map((message) => message.message).join("")
       })
     });
     const data = await response.json();
-    console.log(data);
+    setChatLog([...chatLog, { user: "gpt", message: `${data.message}`} ])
   }
 
   return (
