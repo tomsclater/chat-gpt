@@ -14,6 +14,6 @@ To run: <br/>
 
 9. Hard-code your question and then submit a message to see the AI response <br/>
 
-Needs improvements <br/>
+<u>Needs improvements</u> <br/>
 
 Feel free to improve the code and send pull requests
