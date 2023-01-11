@@ -5,12 +5,22 @@ import { FaPlus } from 'react-icons/fa';
 import { BsSun } from 'react-icons/bs';
 import { AiOutlineThunderbolt } from 'react-icons/ai';
 import { CiWarning } from 'react-icons/ci';
+import { useState } from 'react';
 
 function App() {
 
+  // add state for input and chat log
+  const [input, setInput] = useState("");
+  const [chatLog, setChatLog] = useState([{
+    user: "gpt",
+    message: "How can I help you?"
+  }]);
+
   async function handleSubmit(e){
     e.preventDefault();
-    console.log('submit');
+    setChatLog([...chatLog, { user: "me", message: `${input}`} ])
+    setInput("");
+
   }
 
   return (
@@ -23,43 +33,9 @@ function App() {
       </aside>
       <section className="chatbox">
         <div className="chat-log">
-          <div className="chat-message">
-            <div className="chat-message-center">
-              <div className="avatar">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={32}
-                  height={32}
-                  viewBox="0 0 256 256"
-                >
-                  <path fill="none" d="M0 0h256v256H0z" />
-                  <circle
-                    cx={128}
-                    cy={128}
-                    r={96}
-                    fill="none"
-                    stroke="#000"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={16}
-                  />
-                  <circle cx={92} cy={108} r={12} />
-                  <circle cx={164} cy={108} r={12} />
-                  <path
-                    d="M169.6 152a48.1 48.1 0 0 1-83.2 0"
-                    fill="none"
-                    stroke="#000"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={16}
-                  />
-                </svg>
-              </div>
-              <div className="message">
-                Hello World
-              </div>
-            </div>
-          </div>
+          {chatLog.map((message, index) => (
+              <ChatMessage key={index} message={message} />
+          ))}
           <div className="chat-message chatgpt">
             <div className="chat-message-center">
               <div className="avatar chatgpt">
@@ -116,6 +92,8 @@ function App() {
             <form onSubmit={handleSubmit}>
           <input
             rows="1"
+            value={input}
+            onChange={(e)=> setInput(e.target.value)}
             className="chat-input-textarea"
           >
           </input>
@@ -128,6 +106,49 @@ function App() {
       
     </div>
   );
+}
+
+const ChatMessage = ({ message }) => {
+  return (
+    <div className={`chat-message ${message.user === "gpt" && "chatgpt"}`}>
+            <div className="chat-message-center">
+              <div className={`avatar ${message.user === "gpt" && "chatgpt"}`}>
+                {message.user === "gpt" && <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={32}
+                  height={32}
+                  viewBox="0 0 256 256"
+                >
+                  <path fill="none" d="M0 0h256v256H0z" />
+                  <circle
+                    cx={128}
+                    cy={128}
+                    r={96}
+                    fill="none"
+                    stroke="#000"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={16}
+                  />
+                  <circle cx={92} cy={108} r={12} />
+                  <circle cx={164} cy={108} r={12} />
+                  <path
+                    d="M169.6 152a48.1 48.1 0 0 1-83.2 0"
+                    fill="none"
+                    stroke="#000"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={16}
+                  />
+                </svg>}
+                
+              </div>
+              <div className="message">
+                {message.message}
+              </div>
+            </div>
+          </div>
+  )
 }
 
 export default App;
