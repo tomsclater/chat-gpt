@@ -8,11 +8,11 @@ OpenAI chatbot web app with Express back-end
 
 3. Run the command 'npm install' or 'yarn install' in the root directory<br/>
 
-5. Run the command, 'node index.js' in the console of the main chat-gpt directory to start the back-end server <br/>
+5. Run the command, 'node index.js' in the root directory to start the back-end server <br/>
 
-7. Navigate into the client folder (cd client) and then run the front-end with 'npm run dev' or 'yarn start'
+7. Navigate into the client folder (cd client) then run the front-end with 'npm run dev' or 'yarn start'
 
-9. Hard-code your question and then submit a message to see the AI response <br/>
+9. Hard-code your question in App.js and then submit a message to see the AI response <br/>
 
 <b>Needs improvements</b> <br/>
 
