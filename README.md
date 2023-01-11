@@ -4,4 +4,4 @@ OpenAI chatbot web app with Express back-end
 To run: <br/>
 • Add your API key from OpenAI <br/>
 • Run 'node index.js' command in the chat-gpt directory <br/>
-• Run Node server from the chat-gpt/client folder
+• Run front-end with npm or yarn from the chat-gpt/client folder
