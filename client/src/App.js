@@ -14,6 +14,9 @@ function App() {
   const [chatLog, setChatLog] = useState([{
     user: "gpt",
     message: "How can I help you?"
+  },{
+    user: "me",
+    message: "Are you working?"
   }]);
 
   async function handleSubmit(e){
@@ -36,7 +39,10 @@ function App() {
           {chatLog.map((message, index) => (
               <ChatMessage key={index} message={message} />
           ))}
-          <div className="chat-message chatgpt">
+
+{/* DUMMY COMMENT NUMBER 2 */}
+
+          {/* <div className="chat-message chatgpt">
             <div className="chat-message-center">
               <div className="avatar chatgpt">
                 <svg
@@ -70,7 +76,11 @@ function App() {
                 I am an AI
               </div>
             </div>
-          </div>
+          </div> */}
+
+{/* DUMMY COMMENT NUMBER 2 */}
+
+
         </div>
         <h1 className="interface-heading">AI Chat Interface</h1>
         <div class="parent">
