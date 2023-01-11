@@ -12,8 +12,8 @@ OpenAI chatbot web app with Express back-end
 
 7. Navigate into the client folder (cd client) then run the front-end with 'npm run dev' or 'yarn start'
 
-9. Hard-code your question in App.js and then submit a message to see the AI response <br/>
+9. Hard-code your question in client/src/App.js, then submit a message to see the AI response <br/>
 
-<b>Needs improvements</b> <br/>
+<b>Work in progress</b> <br/>
 
 Feel free to improve the code and send pull requests
