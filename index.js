@@ -1,5 +1,7 @@
 const { Configuration, OpenAIApi } = require("openai");
 // process.env.sk-
+const express = require('express')
+
 const configuration = new Configuration({
     organization: "org-eFtXbJ0UCXeyJXlmM60fCkvK",
     apiKey: "",
@@ -7,7 +9,10 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-async function callApi(){
+const app = express()
+const port = 3080
+
+app.post('/', async (req, res) => {
     const response = await openai.createCompletion({
         model:  "text-davinci-003",
         prompt: "Say this is a test",
@@ -15,16 +20,11 @@ async function callApi(){
         temperature: 0,
     });
    console.log(response.data.choices[0].text)
-}
-callApi()
-
-const express = require('express')
-const app = express()
-const port = 3000
-
-app.get('/', (req, res) => {
-    res.send('Hello World!')
+   res.json({
+    data: response.data
+   })
 });
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 });

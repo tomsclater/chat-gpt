@@ -7,6 +7,12 @@ import { AiOutlineThunderbolt } from 'react-icons/ai';
 import { CiWarning } from 'react-icons/ci';
 
 function App() {
+
+  async function handleSubmit(e){
+    e.preventDefault();
+    console.log('submit');
+  }
+
   return (
     <div className="App">
       <aside className="sidemenu">
@@ -107,11 +113,13 @@ function App() {
         </div>
         <div className="chat-input-holder">
           <div>
-          <textarea
+            <form onSubmit={handleSubmit}>
+          <input
             rows="1"
             className="chat-input-textarea"
           >
-          </textarea>
+          </input>
+          </form>
           </div>
           
 
