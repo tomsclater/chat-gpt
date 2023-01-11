@@ -12,8 +12,8 @@ To run: <br/>
 
 7. Navigate into the client folder (cd client) and then run the front-end with 'npm run dev' or 'yarn start'
 
-9. Hard-code your question and then submit a message to see the AI response
+9. Hard-code your question and then submit a message to see the AI response <br/>
 
-- Needs improvements - 
+Needs improvements <br/>
 
-Feel free to improve code and send pull requests
+Feel free to improve the code and send pull requests
