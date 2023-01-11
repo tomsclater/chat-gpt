@@ -2,7 +2,8 @@ const { Configuration, OpenAIApi } = require("openai");
 // process.env.sk-
 const configuration = new Configuration({
     organization: "org-eFtXbJ0UCXeyJXlmM60fCkvK",
-    apiKey: "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",
+    apiKey: "",
+    // Fill in the above apiKey with your own API Key from OpenAPI
 });
 const openai = new OpenAIApi(configuration);
 
@@ -15,5 +16,4 @@ async function callApi(){
     });
    console.log(response.data.choices[0].text)
 }
-
 callApi()
