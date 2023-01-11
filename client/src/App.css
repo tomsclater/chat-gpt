@@ -177,6 +177,10 @@
   background-color: #63646e;
 }
 
+.div4:hover,.div7:hover,.div10:hover{
+  cursor: pointer;
+}
+
 .App-link {
   color: #61dafb;
 }
