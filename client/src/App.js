@@ -15,8 +15,10 @@ function App() {
     user: "gpt",
     message: "How can I help you?"
   },{
+
     user: "me",
     message: "Code me a basic website in HTML"
+    // edit the message, then submit a new message to see a response from OpenAI
   }]);
 
   async function handleSubmit(e){
