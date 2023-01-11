@@ -13,3 +13,7 @@ To run: <br/>
 7. Navigate into the client folder (cd client) and then run the front-end with 'npm run dev' or 'yarn start'
 
 9. Hard-code your question and then submit a message to see the AI response
+
+- Needs improvements - 
+
+Feel free to improve code and send pull requests
