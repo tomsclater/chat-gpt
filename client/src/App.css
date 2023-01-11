@@ -173,6 +173,10 @@
     padding: 10px;
   }
 
+.div4:hover,.div5:hover,.div6:hover,.div7:hover,.div8:hover,.div9:hover,.div10:hover,.div11:hover,.div12:hover {
+  background-color: #63646e;
+}
+
 .App-link {
   color: #61dafb;
 }
