@@ -1,7 +1,7 @@
 # chat-gpt
 OpenAI chatbot web app with Express back-end
 ![image](https://user-images.githubusercontent.com/44801711/211764225-86eefd13-9665-4891-aee3-6a444b66c65e.png)
-To run: <br/>
+<b>To run: </b><br/>
 
 1. Add your API key from OpenAI in the index.js file in the root directory<br/>
 (If you don't have an API, sign up for free: https://beta.openai.com/overview) <br/>
