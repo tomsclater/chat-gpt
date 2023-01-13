@@ -28,6 +28,7 @@ app.post('/', async (req, res) => {
     const { message } = req.body;
     const response = await openai.createCompletion({
         model:  "text-davinci-003",
+        // change AI dataset model here
         prompt: `${message}`,
         max_tokens: 700,
         temperature: 0.5,
